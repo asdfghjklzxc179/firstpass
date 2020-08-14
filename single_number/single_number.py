@@ -6,10 +6,12 @@ Returns: an integer
 
 def single_number(arr):
     # Your code here
-    one_time = 0
-    more_than_once = 0
+    res = ar[0]
 
     for i in range(len(arr)):
+        res = res ^ ar[i]
+
+    return res
 
 
 if __name__ == '__main__':
